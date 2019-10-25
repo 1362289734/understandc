@@ -1,7 +1,22 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+void change(int a, int b[])
+{
+	int n_1, n_2, n_3, n_4;
+	int v = 0;
+	n_1 = a / 1000;
+	n_2 = (a / 100) - (n_1 * 10);
+	n_3 = (a / 10) - ((n_1 * 100) + (n_2 * 10));
+	n_4 = a - ((n_1 * 1000) + (n_2 * 100) + (n_3 * 10));
 
+
+	b[0] = n_1;
+	b[1] = n_2;
+	b[2] = n_3;
+	b[3] = n_4;
+
+}
 int  main(int argc, char const *argv[])
 {
 	int sn[100];
@@ -24,20 +39,26 @@ int  main(int argc, char const *argv[])
 	}
 
 	int beg = 1;
-	int _beg = 1;
-	while (beg = 1) {
-		while (_beg = 1) {
+
+	while (beg >= 1) {
+		int _beg = 1;
+		while (_beg >= 1) {
 			printf("请输入4个不重复的数字。\n");
-			for (int i = 0; i < 4; ++i)
-			{
-				scanf("%d", &sn[i]);
-			}
-			for (int i = 0; i < 4; i++)
-			{
-				for (int j = i + 1; j < 4; j++)
+			int cnum;
+			scanf("%d", &cnum);
+			change(cnum, sn);
+			if (cnum > 999 && cnum < 10000) {
+				for (int i = 0; i < 4; i++)
 				{
-					if (sn[i] == sn[j])_beg = 1;
-					else _beg = 0;
+					for (int j = i + 1; j < 4; j++)
+					{
+						if (sn[i] == sn[j]) {
+							_beg = 1;
+							break;
+						}
+						else _beg = 0;
+					}
+					if (_beg == 1)break;
 				}
 			}
 		}
