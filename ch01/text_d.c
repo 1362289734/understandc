@@ -1,9 +1,13 @@
-#include<stdio.h>
+﻿#include<stdio.h>
+#include<time.h>
 
 int sleep(unsigned long ms) {
-	unsigned long i = 0;
-	for (i; i < ms * 600000; i++);
-	return 0;
+	clock_t beg = clock(), end;
+	for (int i = 0; i >= 0; i++) {
+		end = clock();
+		if (1000ul * (end - beg) / CLOCKS_PER_SEC > ms)break;
+	}
+	return ms;
 }
 
 int main(void) {
@@ -24,7 +28,7 @@ int main(void) {
 
 		}
 		a[7] = a[index];
-		sleep(300);
+		sleep(500);
 		system("cls");
 	}
 

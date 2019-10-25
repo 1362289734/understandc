@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -10,23 +10,23 @@ void wait(int seconds)
 }
 
 void Game() {
-	char gamer;// Íæ¼Ò³öÈ­
-	int playnum;//×ÜÈËÊı	
-	int computer; // µçÄÔ³öÈ­
+	char gamer;// ç©å®¶å‡ºæ‹³
+	int playnum;//æ€»äººæ•°	
+	int computer; // ç”µè„‘å‡ºæ‹³
 	int a[1000], b[1000];
 	int i = 0;
-	int result; // ±ÈÈü½á¹û
+	int result; // æ¯”èµ›ç»“æœ
 	int _num1 = 0;
 	int Gamer;
 	int _beg = 1;
 
-	printf("ÇëÑ¡Ôñ²ÂÈ­ÈËÊı(2-5):");
+	printf("è¯·é€‰æ‹©çŒœæ‹³äººæ•°(2-5):");
 	scanf("%d", &playnum);
 	system("cls");
 	int beg = 1;
 	while (beg == 1) {
-		printf("Çë³öÈ­£º\n");
-		printf("A:¼ôµ¶\nB:Ê¯Í·\nC:²¼\nD:²»ÍæÁË\n");
+		printf("è¯·å‡ºæ‹³ï¼š\n");
+		printf("A:å‰ªåˆ€\nB:çŸ³å¤´\nC:å¸ƒ\nD:ä¸ç©äº†\n");
 		scanf("%s", &gamer);
 		switch (gamer) {
 		case 65 | 97: // A | a
@@ -39,32 +39,32 @@ void Game() {
 			return 0;
 
 		default:
-			printf("ÄãµÄÑ¡ÔñÎª %c Ñ¡Ôñ´íÎó,ÍË³ö...\n", gamer);
+			printf("ä½ çš„é€‰æ‹©ä¸º %c é€‰æ‹©é”™è¯¯,é€€å‡º...\n", gamer);
 			getchar();
 			wait(2);
-			system("cls"); // ÇåÆÁ
+			system("cls"); // æ¸…å±
 			return 0;
 			break;
 		}
 
 		printf("\n");
-		printf("Äã³öÁË");
+		printf("ä½ å‡ºäº†");
 		switch (gamer)
 		{
-		case 1:printf("¼ôµ¶\n"); break;
-		case 2:printf("Ê¯Í·\n"); break;
-		case 3:printf("²¼\n"); break;
+		case 1:printf("å‰ªåˆ€\n"); break;
+		case 2:printf("çŸ³å¤´\n"); break;
+		case 3:printf("å¸ƒ\n"); break;
 		}
 		for (int _num = 1; _num < playnum; _num++) {
-			printf("µçÄÔ%d³öÁË:", _num);
-			srand((unsigned)time(NULL)); // Ëæ»úÊıÖÖ×Ó
-			computer = rand() % 3 + 1; // ²úÉúËæ»úÊı²¢È¡Óà£¬µÃµ½µçÄÔ³öÈ­
+			printf("ç”µè„‘%då‡ºäº†:", _num);
+			srand((unsigned)time(NULL)); // éšæœºæ•°ç§å­
+			computer = rand() % 3 + 1; // äº§ç”Ÿéšæœºæ•°å¹¶å–ä½™ï¼Œå¾—åˆ°ç”µè„‘å‡ºæ‹³
 			wait(1);
 			switch (computer)
 			{
-			case 1:printf("¼ôµ¶\n"); break;
-			case 2:printf("Ê¯Í·\n"); break;
-			case 3:printf("²¼\n"); break;
+			case 1:printf("å‰ªåˆ€\n"); break;
+			case 2:printf("çŸ³å¤´\n"); break;
+			case 3:printf("å¸ƒ\n"); break;
 			}
 			wait(1);
 			a[i] = computer;
@@ -73,7 +73,7 @@ void Game() {
 		printf("\n");
 		beg = 2;
 		Gamer = (int)gamer;
-		if (playnum >= 3) { //********************************Í¬Ê±ÓĞÊ¯Í·¼ôµ¶²¼ÔòÖØĞÂÊäÈë
+		if (playnum >= 3) { //********************************åŒæ—¶æœ‰çŸ³å¤´å‰ªåˆ€å¸ƒåˆ™é‡æ–°è¾“å…¥
 
 			for (int _pn = playnum - 2; _pn >= 0;) {
 				if (a[_pn] == 0) {
@@ -99,7 +99,7 @@ void Game() {
 						}
 						if (c[0] != c[1] || c[0] != c[2] || c[1] != c[2]) {
 							if (c[0] + c[1] + c[2] > 5) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -107,7 +107,7 @@ void Game() {
 							}
 						}
 						if (c[0] + c[1] + c[2] == 1) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -125,7 +125,7 @@ void Game() {
 						if (a[_pn1] == 3) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -142,7 +142,7 @@ void Game() {
 						if (a[_pn1] == 2) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -173,21 +173,21 @@ void Game() {
 						}
 						if (c[0] == c[1] && c[0] == c[2] && c[1] == c[2] && c[0] == 2)
 						{
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
 							continue;
 						}
 						if (c[0] + c[1] + c[2] == 6 || c[0] + c[1] + c[2] == 4) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
 							continue;
 						}
 						if (c[0] + c[1] + c[2] == 2) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -208,7 +208,7 @@ void Game() {
 						if (a[_pn1] == 3) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -237,7 +237,7 @@ void Game() {
 						if (a[_pn1] == 1) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -268,7 +268,7 @@ void Game() {
 						}
 						if (c[0] != c[1] && c[0] != c[2] && c[1] != c[2]) {
 							if (c[0] + c[1] + c[2] > 3) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -277,7 +277,7 @@ void Game() {
 						}
 						if (c[0] + c[1] == 0 || c[1] + c[2] == 0 || c[0] + c[2] == 0) {
 							if (c[0] + c[1] + c[2] == 3) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -295,7 +295,7 @@ void Game() {
 						if (a[_pn1] == 1) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -312,7 +312,7 @@ void Game() {
 						if (a[_pn1] == 2) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -327,31 +327,31 @@ void Game() {
 	goto gamble;
 
 	/*********************************************************************************************************
-	************************************************Íæ¼ÒÌÔÌ­ºó************************************************
+	************************************************ç©å®¶æ·˜æ±°å************************************************
 	**********************************************************************************************************/
 flag_1:
-	printf("ÄãÒÑÌÔÌ­\n"); //Íæ¼ÒÌÔÌ­ºóµçÄÔ¼ÌĞø½øĞĞ²ÂÈ­
+	printf("ä½ å·²æ·˜æ±°\n"); //ç©å®¶æ·˜æ±°åç”µè„‘ç»§ç»­è¿›è¡ŒçŒœæ‹³
 	i = 0;
 	int fail = 0;
 	for (int _num = 1; _num < playnum; _num++) {
 
 		if (_num == b[fail]) {
-			printf("µçÄÔ%dÒÑÌÔÌ­\n", b[fail]);
+			printf("ç”µè„‘%då·²æ·˜æ±°\n", b[fail]);
 			fail++;
 			a[i] = 0;
 			i++;
 
 		}
 		else {
-			printf("µçÄÔ%d³öÁË:", _num);
-			srand((unsigned)time(NULL)); // Ëæ»úÊıÖÖ×Ó
-			computer = rand() % 3 + 1; // ²úÉúËæ»úÊı²¢È¡Óà£¬µÃµ½µçÄÔ³öÈ­
+			printf("ç”µè„‘%då‡ºäº†:", _num);
+			srand((unsigned)time(NULL)); // éšæœºæ•°ç§å­
+			computer = rand() % 3 + 1; // äº§ç”Ÿéšæœºæ•°å¹¶å–ä½™ï¼Œå¾—åˆ°ç”µè„‘å‡ºæ‹³
 			wait(1);
 			switch (computer)
 			{
-			case 1:printf("¼ôµ¶\n"); break;
-			case 2:printf("Ê¯Í·\n"); break;
-			case 3:printf("²¼\n"); break;
+			case 1:printf("å‰ªåˆ€\n"); break;
+			case 2:printf("çŸ³å¤´\n"); break;
+			case 3:printf("å¸ƒ\n"); break;
 			}
 			wait(1);
 			a[i] = computer;
@@ -360,7 +360,7 @@ flag_1:
 	fail = 0;
 	printf("\n\n");
 	int _pn2 = 0;
-	for (int _pn = playnum - 2; _pn >= 0;) {//*************************************************Í¬Ê±ÓĞÊ¯Í·¼ôµ¶²¼ÔòÖØĞÂÊäÈë
+	for (int _pn = playnum - 2; _pn >= 0;) {//*************************************************åŒæ—¶æœ‰çŸ³å¤´å‰ªåˆ€å¸ƒåˆ™é‡æ–°è¾“å…¥
 		if (a[_pn] == 0) _pn--;
 		if (a[_pn2] == 0) _pn2++;
 		if (_pn2 = 4)return 0;
@@ -384,14 +384,14 @@ flag_1:
 				}
 				if (c[0] != c[1]) {
 					if (c[0] + c[1] == 5) {
-						printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+						printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 						wait(1);
 						system("cls");
 						goto flag_1;
 					}
 				}
 				if (c[0] + c[1] == 1 || c[0] + c[1] == 2) {
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -408,7 +408,7 @@ flag_1:
 				if (a[_pn1] == 3) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -424,7 +424,7 @@ flag_1:
 				if (a[_pn1] == 2) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -455,13 +455,13 @@ flag_1:
 					_c++;
 				}
 				if (c[0] != c[1] && c[0] + c[1] == 4) {
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
 				}
 				if (c[0] == c[1] && c[0] + c[1] == 4) {
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -481,7 +481,7 @@ flag_1:
 				if (a[_pn1] == 3) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -509,7 +509,7 @@ flag_1:
 				if (a[_pn1] == 1) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -540,13 +540,13 @@ flag_1:
 					_c++;
 				}
 				if (c[0] + c[1] == 3) {
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
 				}
 				if (c[0] + c[1] == 6) {
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -562,7 +562,7 @@ flag_1:
 				if (a[_pn1] == 1) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -578,7 +578,7 @@ flag_1:
 				if (a[_pn1] == 2) {
 					c[_c] = a[_pn1];
 					_c++;
-					printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					goto flag_1;
@@ -589,8 +589,8 @@ flag_1:
 
 
 
-	//Íæ¼ÒÌÔÌ­ºóµçÄÔ²ÂÈ­µÃµ½µÄÃ¿ÂÖ½á¹û
-	printf("ÄãÒÑÌÔÌ­\n");
+	//ç©å®¶æ·˜æ±°åç”µè„‘çŒœæ‹³å¾—åˆ°çš„æ¯è½®ç»“æœ
+	printf("ä½ å·²æ·˜æ±°\n");
 	int com = 0;
 	//int z = 1;
 	for (com; com < playnum;) {
@@ -598,39 +598,39 @@ flag_1:
 		if (a[com] == 1) {
 			for (int _com = com + 1; _com < playnum; _com++) {
 				if (a[_com] == 2) {
-					printf("µçÄÔ%dÊäÁË\n", com + 1);
+					printf("ç”µè„‘%dè¾“äº†\n", com + 1);
 					for (z; z < playnum; z++) {
 						if (a[z] == 1) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+						if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 						if (a[z] == 3) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
 					goto flag_1;
 				}
 				if (a[_com] == 3) {
-					printf("µçÄÔ%dÓ®ÁË\n", com + 1);
+					printf("ç”µè„‘%dèµ¢äº†\n", com + 1);
 					for (z; z < playnum; z++) {
-						if (a[z] == 1)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-						if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+						if (a[z] == 1)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+						if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 						if (a[z] == 3) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
@@ -641,39 +641,39 @@ flag_1:
 		if (a[com] == 2) {
 			for (int _com = com + 1; _com < playnum; _com++) {
 				if (a[_com] == 3) {
-					printf("µçÄÔ%dÊäÁË\n", com + 1);
+					printf("ç”µè„‘%dè¾“äº†\n", com + 1);
 					for (z; z < playnum; z++) {
-						if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+						if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 						if (a[z] == 2) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
 						if (a[z] == 1) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
 					goto flag_1;
 				}
 				if (a[_com] == 1) {
-					printf("µçÄÔ%dÓ®ÁË\n", com + 1);
+					printf("ç”µè„‘%dèµ¢äº†\n", com + 1);
 					for (z; z < playnum; z++) {
-						if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-						if (a[z] == 2)printf("µçÄÔ%dÆ½ÊÖ\n", z + 1);
+						if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+						if (a[z] == 2)printf("ç”µè„‘%då¹³æ‰‹\n", z + 1);
 						if (a[z] == 1) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
@@ -684,39 +684,39 @@ flag_1:
 		if (a[com] == 3) {
 			for (int _com = com + 1; _com < playnum; _com++) {
 				if (a[_com] == 1) {
-					printf("µçÄÔ%dÊäÁË\n", com + 1);
+					printf("ç”µè„‘%dè¾“äº†\n", com + 1);
 					for (z; z < playnum; z++) {
 						if (a[z] == 3) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+						if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 						if (a[z] == 1) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
 					goto flag_1;
 				}
 				if (a[_com] == 2) {
-					printf("µçÄÔ%dÓ®ÁË\n", com + 1);
+					printf("ç”µè„‘%dèµ¢äº†\n", com + 1);
 					for (z; z < playnum; z++) {
-						if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-						if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+						if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+						if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 						if (a[z] == 1) {
-							printf("µçÄÔ%dÊäÁË\n", z + 1);
+							printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 							b[_num1] = z + 1;
 							a[z] = 0;
 							_num1++;
 						}
-						if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+						if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 					}
 					wait(5);
 					system("cls");
@@ -725,45 +725,45 @@ flag_1:
 			}
 		}
 		if (a[com] == 0) {
-			printf("µçÄÔ%dÒÑÌÔÌ­\n", com + 1);
+			printf("ç”µè„‘%då·²æ·˜æ±°\n", com + 1);
 			com++;
 			z++;
 		}
 	}
 	if (b[0] == 0 && b[1] == 0 && b[2] == 0 && b[3] == 0)
 	{
-		printf("ÄãÓ®ÁË\n");
+		printf("ä½ èµ¢äº†\n");
 		system("pause");
 	}
 	if (b[0] != 0 && b[1] == 0 && b[2] == 0 && b[3] == 0)
 	{
-		printf("µçÄÔ1Ó®ÁË\n");
+		printf("ç”µè„‘1èµ¢äº†\n");
 		system("pause");
 	}
 	if (b[0] == 0 && b[1] != 0 && b[2] == 0 && b[3] == 0)
 	{
-		printf("µçÄÔ2Ó®ÁË\n");
+		printf("ç”µè„‘2èµ¢äº†\n");
 		system("pause");
 	}
 	if (b[0] == 0 && b[1] == 0 && b[2] != 0 && b[3] == 0)
 	{
-		printf("µçÄÔ3Ó®ÁË\n");
+		printf("ç”µè„‘3èµ¢äº†\n");
 		system("pause");
 	}
 	if (b[0] == 0 && b[1] == 0 && b[2] == 0 && b[3] != 0)
 	{
-		printf("µçÄÔ4Ó®ÁË\n");
+		printf("ç”µè„‘4èµ¢äº†\n");
 		system("pause");
 	}
 	goto flag_1;
 	/*******************************************************************************************************************
-	************************************************Íæ¼ÒÓ®ÁËºó¼ÌĞø******************************************************
+	************************************************ç©å®¶èµ¢äº†åç»§ç»­******************************************************
 	********************************************************************************************************************/
 flag_2:
 
 	while (_beg == 1) {
-		printf("Çë³öÈ­£º\n");
-		printf("A:¼ôµ¶\nB:Ê¯Í·\nC:²¼\nD:²»ÍæÁË\n");
+		printf("è¯·å‡ºæ‹³ï¼š\n");
+		printf("A:å‰ªåˆ€\nB:çŸ³å¤´\nC:å¸ƒ\nD:ä¸ç©äº†\n");
 		scanf("%s", &gamer);
 		switch (gamer) {
 		case 65 | 97: // A | a
@@ -776,18 +776,18 @@ flag_2:
 			return 0;
 
 		default:
-			printf("ÄãµÄÑ¡ÔñÎª %c Ñ¡Ôñ´íÎó,ÍË³ö...\n", gamer);
+			printf("ä½ çš„é€‰æ‹©ä¸º %c é€‰æ‹©é”™è¯¯,é€€å‡º...\n", gamer);
 			getchar();
-			system("cls"); // ÇåÆÁ
+			system("cls"); // æ¸…å±
 			return 0;
 			break;
 		}
-		printf("Äã³öÁË");
+		printf("ä½ å‡ºäº†");
 		switch (gamer)
 		{
-		case 1:printf("¼ôµ¶\n"); break;
-		case 2:printf("Ê¯Í·\n"); break;
-		case 3:printf("²¼\n"); break;
+		case 1:printf("å‰ªåˆ€\n"); break;
+		case 2:printf("çŸ³å¤´\n"); break;
+		case 3:printf("å¸ƒ\n"); break;
 		}
 		wait(1);
 		i = 0;
@@ -795,21 +795,21 @@ flag_2:
 		for (int _num = 1; _num < playnum; _num++) {
 
 			if (_num == b[fail]) {
-				printf("µçÄÔ%dÒÑÌÔÌ­\n", b[fail]);
+				printf("ç”µè„‘%då·²æ·˜æ±°\n", b[fail]);
 				fail++;
 				a[i] = 0;
 				i++;
 			}
 			else {
-				printf("µçÄÔ%d³öÁË:", _num);
-				srand((unsigned)time(NULL)); // Ëæ»úÊıÖÖ×Ó
-				computer = rand() % 3 + 1; // ²úÉúËæ»úÊı²¢È¡Óà£¬µÃµ½µçÄÔ³öÈ­
+				printf("ç”µè„‘%då‡ºäº†:", _num);
+				srand((unsigned)time(NULL)); // éšæœºæ•°ç§å­
+				computer = rand() % 3 + 1; // äº§ç”Ÿéšæœºæ•°å¹¶å–ä½™ï¼Œå¾—åˆ°ç”µè„‘å‡ºæ‹³
 				wait(1);
 				switch (computer)
 				{
-				case 1:printf("¼ôµ¶\n"); break;
-				case 2:printf("Ê¯Í·\n"); break;
-				case 3:printf("²¼\n"); break;
+				case 1:printf("å‰ªåˆ€\n"); break;
+				case 2:printf("çŸ³å¤´\n"); break;
+				case 3:printf("å¸ƒ\n"); break;
 				}
 				wait(1);
 				a[i] = computer;
@@ -820,10 +820,10 @@ flag_2:
 		printf("\n\n");
 		_beg = 2;
 		int Gamer_ = Gamer * 10;
-		/*for (int j = 0; j < playnum; j++) {    //Í¬Ê±ÓĞÊ¯Í·¼ôµ¶²¼ÔòÖØĞÂÊäÈë
+		/*for (int j = 0; j < playnum; j++) {    //åŒæ—¶æœ‰çŸ³å¤´å‰ªåˆ€å¸ƒåˆ™é‡æ–°è¾“å…¥
 			for (int k = 1; k < playnum; k++) {
 				if (a[j] + a[k] + Gamer == 6 && a[j] == 2 && a[k] == 2 && Gamer == 2) {
-					printf("Ã»ÓĞÊäÓ®,ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢,é‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					_beg=1;;
@@ -831,7 +831,7 @@ flag_2:
 			}
 			for (int k = 1; k < playnum; k++) {
 				if (Gamer == a[j] && a[j] == a[k] && a[k] == a[k + 1] && a[k + 1] == a[k + 2]) {
-					printf("Ã»ÓĞÊäÓ®,ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢,é‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					_beg=1;
@@ -839,14 +839,14 @@ flag_2:
 			}
 			for (int k = 1; k < playnum; k++) {
 				if (a[j] + a[k] + Gamer_ == 15 || Gamer_ - a[j] + a[k] == 22 || Gamer_ - a[j] + a[k] == 18 || a[j] + a[k] + Gamer_ == 33) {
-					printf("Ã»ÓĞÊäÓ®,ÖØĞÂÊäÈë");
+					printf("æ²¡æœ‰è¾“èµ¢,é‡æ–°è¾“å…¥");
 					wait(1);
 					system("cls");
 					_beg=1;
 				}
 			}
 		}*/
-		if (playnum >= 3) { //********************************Í¬Ê±ÓĞÊ¯Í·¼ôµ¶²¼ÔòÖØĞÂÊäÈë
+		if (playnum >= 3) { //********************************åŒæ—¶æœ‰çŸ³å¤´å‰ªåˆ€å¸ƒåˆ™é‡æ–°è¾“å…¥
 
 			for (int _pn = playnum - 2; _pn >= 0;) {
 				if (a[_pn] == 0) {
@@ -872,7 +872,7 @@ flag_2:
 						}
 						if (c[0] != c[1] || c[0] != c[2] || c[1] != c[2]) {
 							if (c[0] + c[1] + c[2] > 5) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -880,7 +880,7 @@ flag_2:
 							}
 						}
 						if (c[0] + c[1] + c[2] == 1) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -898,7 +898,7 @@ flag_2:
 						if (a[_pn1] == 3) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -915,7 +915,7 @@ flag_2:
 						if (a[_pn1] == 2) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -946,21 +946,21 @@ flag_2:
 						}
 						if (c[0] == c[1] && c[0] == c[2] && c[1] == c[2] && c[0] == 2)
 						{
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
 							continue;
 						}
 						if (c[0] + c[1] + c[2] == 6 || c[0] + c[1] + c[2] == 4) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
 							continue;
 						}
 						if (c[0] + c[1] + c[2] == 2) {
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -981,7 +981,7 @@ flag_2:
 						if (a[_pn1] == 3) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -1010,7 +1010,7 @@ flag_2:
 						if (a[_pn1] == 1) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -1041,7 +1041,7 @@ flag_2:
 						}
 						if (c[0] != c[1] && c[0] != c[2] && c[1] != c[2]) {
 							if (c[0] + c[1] + c[2] > 3) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -1050,7 +1050,7 @@ flag_2:
 						}
 						if (c[0] + c[1] == 0 || c[1] + c[2] == 0 || c[0] + c[2] == 0) {
 							if (c[0] + c[1] + c[2] == 3) {
-								printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+								printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 								wait(1);
 								system("cls");
 								beg = 1;
@@ -1068,7 +1068,7 @@ flag_2:
 						if (a[_pn1] == 1) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -1085,7 +1085,7 @@ flag_2:
 						if (a[_pn1] == 2) {
 							c[_c] = a[_pn1];
 							_c++;
-							printf("Ã»ÓĞÊäÓ®£¬ÖØĞÂÊäÈë");
+							printf("æ²¡æœ‰è¾“èµ¢ï¼Œé‡æ–°è¾“å…¥");
 							wait(1);
 							system("cls");
 							beg = 1;
@@ -1099,45 +1099,45 @@ flag_2:
 	}
 	goto gamble;
 	/*************************************************************************************************************
-	************************************************Ã¿ÂÖ½á¹ûµÄÊä³ö************************************************
+	************************************************æ¯è½®ç»“æœçš„è¾“å‡º************************************************
 	**************************************************************************************************************/
-gamble:  //Êä³öÃ¿Ò»ÂÖ½á¹û
+gamble:  //è¾“å‡ºæ¯ä¸€è½®ç»“æœ
 	if (Gamer == 1) {
 		for (int x = 0; x < playnum; x++) {
 			if (a[x] == 2) {
-				printf("ÄãÊäÁË\n");
+				printf("ä½ è¾“äº†\n");
 				for (int z = 0; z < playnum; z++) {
 					if (a[z] == 1) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+					if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 					if (a[z] == 3) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
 				goto flag_1;
 			}
 			if (a[x] == 3) {
-				printf("ÄãÓ®ÁË\n");
+				printf("ä½ èµ¢äº†\n");
 				for (int z = 0; z < playnum; z++) {
-					if (a[z] == 1)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-					if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+					if (a[z] == 1)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+					if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 					if (a[z] == 3) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
@@ -1150,39 +1150,39 @@ gamble:  //Êä³öÃ¿Ò»ÂÖ½á¹û
 	if (Gamer == 2) {
 		for (int x = 0; x < playnum; x++) {
 			if (a[x] == 3) {
-				printf("ÄãÊäÁË\n");
+				printf("ä½ è¾“äº†\n");
 				for (int z = 0; z < playnum; z++) {
 					if (a[z] == 1) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
 					if (a[z] == 2) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
 				goto flag_1;
 			}
 			if (a[x] == 1) {
-				printf("ÄãÓ®ÁË\n");
+				printf("ä½ èµ¢äº†\n");
 				for (int z = 0; z < playnum; z++) {
 					if (a[z] == 1) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 2)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-					if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 2)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+					if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
@@ -1195,39 +1195,39 @@ gamble:  //Êä³öÃ¿Ò»ÂÖ½á¹û
 	if (Gamer == 3) {
 		for (int x = 0; x < playnum; x++) {
 			if (a[x] == 1) {
-				printf("ÄãÊäÁË\n");
+				printf("ä½ è¾“äº†\n");
 				for (int z = 0; z < playnum; z++) {
-					if (a[z] == 1)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+					if (a[z] == 1)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 					if (a[z] == 2) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
 					if (a[z] == 3) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
 				goto flag_1;
 			}
 			if (a[x] == 2) {
-				printf("ÄãÓ®ÁË\n");
+				printf("ä½ èµ¢äº†\n");
 				for (int z = 0; z < playnum; z++) {
-					if (a[z] == 1)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
+					if (a[z] == 1)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
 					if (a[z] == 2) {
-						printf("µçÄÔ%dÊäÁË\n", z + 1);
+						printf("ç”µè„‘%dè¾“äº†\n", z + 1);
 						b[_num1] = z + 1;
 						a[z] = 0;
 						_num1++;
 					}
-					if (a[z] == 3)printf("µçÄÔ%dÓ®ÁË\n", z + 1);
-					if (a[z] == 0)printf("µçÄÔ%dÒÑÌÔÌ­\n", z + 1);
+					if (a[z] == 3)printf("ç”µè„‘%dèµ¢äº†\n", z + 1);
+					if (a[z] == 0)printf("ç”µè„‘%då·²æ·˜æ±°\n", z + 1);
 				}
 				wait(5);
 				system("cls");
@@ -1237,27 +1237,27 @@ gamble:  //Êä³öÃ¿Ò»ÂÖ½á¹û
 	}
 	if (a[0] == 0 && a[1] == 0 && a[2] == 0 && a[3] == 0)
 	{
-		printf("ÄãÓ®ÁË\n");
+		printf("ä½ èµ¢äº†\n");
 		system("pause");
 	}
 	if (a[0] != 0 && a[1] == 0 && a[2] == 0 && a[3] == 0)
 	{
-		printf("µçÄÔ1Ó®ÁË\n");
+		printf("ç”µè„‘1èµ¢äº†\n");
 		system("pause");
 	}
 	if (a[0] == 0 && a[1] != 0 && a[2] == 0 && a[3] == 0)
 	{
-		printf("µçÄÔ2Ó®ÁË\n");
+		printf("ç”µè„‘2èµ¢äº†\n");
 		system("pause");
 	}
 	if (a[0] == 0 && a[1] == 0 && a[2] != 0 && a[3] == 0)
 	{
-		printf("µçÄÔ3Ó®ÁË\n");
+		printf("ç”µè„‘3èµ¢äº†\n");
 		system("pause");
 	}
 	if (a[0] == 0 && a[1] == 0 && a[2] == 0 && a[3] != 0)
 	{
-		printf("µçÄÔ4Ó®ÁË\n");
+		printf("ç”µè„‘4èµ¢äº†\n");
 		system("pause");
 	}
 }

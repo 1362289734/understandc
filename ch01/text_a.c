@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
@@ -14,27 +14,27 @@ int main(void) {
 			return 0;
 		}
 		if (a >= 0 && a < 5) {
-			printf("´ó¼ª");
+			printf("å¤§å‰");
 		}
 		else if (a >= 5 && a < 15) {
-			printf("ÖÐ¼ª");
+			printf("ä¸­å‰");
 		}
 		else if (a >= 15 && a < 30) {
-			printf("Ð¡¼ª");
+			printf("å°å‰");
 		}
 		else if (a >= 30 && a < 60) {
-			printf("¼ª");
+			printf("å‰");
 		}
 		else if (a >= 60 && a < 80) {
-			printf("Ä©¼ª");
+			printf("æœ«å‰");
 		}
 		else if (a >= 80 && a < 95) {
-			printf("Ð×");
+			printf("å‡¶");
 		}
 		else {
-			printf("´óÐ×");
+			printf("å¤§å‡¶");
 		}
 		_num = getch();
 		system("cls");
 	}
-}
+} 

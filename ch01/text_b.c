@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
@@ -51,9 +51,9 @@ int main(void) {
 	int a[1000];
 	int i = 0, j = 1, z = 0;
 loop:
-	printf_s("ÇëÑ¡ÔñÄÑ¶ÈµÈ¼¶(1-4):");
+	printf_s("è¯·é€‰æ‹©éš¾åº¦ç­‰çº§(1-4):");
 	scanf_s("%d", &_lev);
-	printf_s("ÇëÊäÈëÏëÒª²ÂµÄ´ÎÊı(ÊäÈë0·µ»ØÉÏÒ»¼¶):");
+	printf_s("è¯·è¾“å…¥æƒ³è¦çŒœçš„æ¬¡æ•°(è¾“å…¥0è¿”å›ä¸Šä¸€çº§):");
 	scanf_s("%d", &_time);
 	if (_time == 0) {
 		system("cls");
@@ -66,22 +66,22 @@ loop:
 	for (; _time >= 0; _time--) {
 
 		system("cls");
-		printf_s("ÏÖÔÚ¿ªÊ¼²ÂÊı£¬Ê£Óà´ÎÊı:%d\n", _time);
+		printf_s("ç°åœ¨å¼€å§‹çŒœæ•°ï¼Œå‰©ä½™æ¬¡æ•°:%d\n", _time);
 		if (_time == 0) {
 			system("cls");
-			printf_s("´ÎÊıºÄ¾¡£¡");
+			printf_s("æ¬¡æ•°è€—å°½ï¼");
 			wait(2);
 			break;
 		}
-		printf_s("ÇëÊäÈëÊı×Ö(0-%d):", _lev1);
+		printf_s("è¯·è¾“å…¥æ•°å­—(0-%d):", _lev1);
 		scanf_s("%d", &_snum);
 		if (_snum < 0 && _snum >= _lev1 + 1) {
-			printf_s("ÇëÊäÈë·¶Î§ÄÚµÄÊı×Ö!");
+			printf_s("è¯·è¾“å…¥èŒƒå›´å†…çš„æ•°å­—!");
 		}
 		if (_snum <= _lev1 && _snum >= 0) {
 			if (_snum > _ans) {
-				printf_s("ÊäÈëµÄÊÇ:%d \n", _snum);
-				printf_s("Ã»ÓĞ²ÂÖĞ£¬´óÁË");
+				printf_s("è¾“å…¥çš„æ˜¯:%d \n", _snum);
+				printf_s("æ²¡æœ‰çŒœä¸­ï¼Œå¤§äº†");
 				wait(1);
 				a[i] = _snum;
 				i++;
@@ -89,8 +89,8 @@ loop:
 				i++;
 			}
 			else if (_snum < _ans) {
-				printf_s("ÊäÈëµÄÊÇ:%d \n", _snum);
-				printf_s("Ã»ÓĞ²ÂÖĞ£¬Ğ¡ÁË");
+				printf_s("è¾“å…¥çš„æ˜¯:%d \n", _snum);
+				printf_s("æ²¡æœ‰çŒœä¸­ï¼Œå°äº†");
 				wait(1);
 				a[i] = _snum;
 				i++;
@@ -98,7 +98,7 @@ loop:
 				i++;
 			}
 			else {
-				printf_s("¹§Ï²Äã£¬²ÂÖĞÁË¡£");
+				printf_s("æ­å–œä½ ï¼ŒçŒœä¸­äº†ã€‚");
 				printf_s("\n");
 				a[i] = _snum;
 				i++;
@@ -110,8 +110,8 @@ loop:
 		}
 	}
 	system("cls");
-	printf_s("²ÂÌâ¼ÇÂ¼ÈçÏÂ£º\n");
-	printf_s("´ÎÊı: Êı×Ö: Ïà²î: \n");
+	printf_s("çŒœé¢˜è®°å½•å¦‚ä¸‹ï¼š\n");
+	printf_s("æ¬¡æ•°: æ•°å­—: ç›¸å·®: \n");
 	for (z; z < i; ) {
 		printf_s("%5d", j);
 		j++;
