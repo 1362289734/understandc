@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <mach_debug/zone_info.h>
 
 #define MAX_GAMER 5
 // 标识比较结果的初始状态，不能是0 -1 或1
