@@ -1,7 +1,7 @@
 #include "intList.h"
 
 int main(void) {
-
+     
 //    FILE *file = fopen("./datab.dat", "rb");
 //    if (file == NULL) {
 //        printf("文件打开失败");

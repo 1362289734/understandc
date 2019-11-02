@@ -1,6 +1,6 @@
 //
 // Created by 李熠 on 2019/10/10.
-//
+//  
 #include "singlyIntNode.h"
 
 SinglyIntNode *singlyIntNodeCreate() {

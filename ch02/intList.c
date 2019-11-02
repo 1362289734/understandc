@@ -1,7 +1,7 @@
 //
 // Created by 李熠 on 2019/11/2.
 //
-
+ 
 #include "intList.h"
 
 int isIndexValid(const IntList *list, int index);
