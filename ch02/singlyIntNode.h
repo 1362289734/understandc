@@ -1,14 +1,11 @@
-// 
-// Created by 李熠 on 2019/10/10.
-//
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct SinglyIntNode {
-    // 指向下一个节点
-    struct SinglyIntNode *next;
-    // 保存的值
-    int value;
+	// 指向下一个节点
+	struct SinglyIntNode *next;
+	// 保存的值
+	int value;
 } SinglyIntNode;
 
 SinglyIntNode *singlyIntNodeCreate();
@@ -79,3 +76,5 @@ SinglyIntNode *singlyIntNodeDeserializeB(FILE *file);
 void singlyIntNodeSerialize(SinglyIntNode *list, FILE *file);
 
 SinglyIntNode *singlyIntNodeDeserialize(FILE *file);
+
+int singlyIntNodeGetLength(SinglyIntNode *list);
