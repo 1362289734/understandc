@@ -41,7 +41,7 @@ int singlyIntNodeDeleteElem(SinglyIntNode *list, int elem);
  * 将数据倒序
  * @param list
  */
-void singlyIntNodeRevert(SinglyIntNode *list);
+int singlyIntNodeRevert(SinglyIntNode *list);
 
 /**
  * 向指定位置插入数据，后面的数据后移，如果插入的位置超过最大位置，则提示插入失败，返回0

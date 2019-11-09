@@ -88,7 +88,7 @@ int singlyIntNodeDeleteElem(SinglyIntNode *list, int elem)
 
 
 
-void singlyIntNodeRevert(SinglyIntNode *list)
+int  singlyIntNodeRevert(SinglyIntNode *list)
 {
 	SinglyIntNode *current, *p;
 	if (list == NULL)
