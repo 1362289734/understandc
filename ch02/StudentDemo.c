@@ -107,10 +107,8 @@ int main() {
 	printf("\n");
 
 	studentListDestroy(list);
-	studentListDisplay(list);
 
-
-
+//	studentListDisplay(list);
 
 	printf("111111\n");
 
