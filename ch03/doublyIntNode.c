@@ -110,7 +110,7 @@ void doublyIntNodeRevert(DoublyIntNode *list) {
     head = list;
     first = head->next;
     int i = 0;
-    while (list->next != NULL) { //查询最后一位元素的前驱
+    while (list->next != NULL) {
         temp = list->next;
         list->next = list->prev;
         list->prev = temp;

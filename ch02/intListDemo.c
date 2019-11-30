@@ -1,7 +1,33 @@
 #include "intList.h"
 
+enum BOOL {
+    FALSE, TRUE
+};
+
+typedef struct Student {
+    char name[20];
+    int age;
+} Student;
+
+
+Student *createStudent(char *name, int age) {
+    Student *rlt = malloc(sizeof(Student));
+    memcpy(rlt->name, name, strlen(name) + 1);
+    rlt->age = age;
+    return rlt;
+}
+
 int main(void) {
-     
+
+    Student* (*load)(char*,int);
+    load = createStudent;
+    Student *zhangsan = (*load)("张三",18);
+    printf("name:%s,age:%d\n",zhangsan->name,zhangsan->age);
+
+
+
+    return  0;
+
 //    FILE *file = fopen("./datab.dat", "rb");
 //    if (file == NULL) {
 //        printf("文件打开失败");
@@ -47,24 +73,24 @@ int main(void) {
 //    fclose(file);
 
 
-    FILE *file = fopen("./datab.dat", "rb");
-    IntList *list = deserializeB(file);
-//    IntList *list = intListNew(SIZE_STEP);
-//    for (int i = 0; i < 15; ++i) {
-//        intListAdd(list, i + 1);
-//    }
-
-    intListDisplay(list);
-
-//    serializeB(list,file);
-
-    fclose(file);
-
-//    intListUpdate(list, 2, 10);
-//    intListDisplay(list);
-//    intListDelete(list, 1);
-//    intListDisplay(list);
-//    printf("get:%d", intListGet(list, 2));
+//    FILE *file = fopen("./datab.dat", "rb");
+//    IntList *list = deserializeB(file);
+////    IntList *list = intListNew(SIZE_STEP);
+////    for (int i = 0; i < 15; ++i) {
+////        intListAdd(list, i + 1);
+////    }
 //
-    intListDestroy(list);
+//    intListDisplay(list);
+//
+////    serializeB(list,file);
+//
+//    fclose(file);
+//
+////    intListUpdate(list, 2, 10);
+////    intListDisplay(list);
+////    intListDelete(list, 1);
+////    intListDisplay(list);
+////    printf("get:%d", intListGet(list, 2));
+////
+//    intListDestroy(list);
 }
