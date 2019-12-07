@@ -16,6 +16,12 @@ ListNode *createListNode() {
     return rlt;
 }
 
+/**
+ * list->head 节点用于保存链表有效数据的长度，保存的第一个数据位于head->next
+ * @param type
+ * @param listGenericFn
+ * @return
+ */
 List *listNew(enum ListNodeType type, ListGenericFn *listGenericFn) {
     List *rlt = (List *) calloc(1, sizeof(List));
     rlt->head = (ListNode *) calloc(1, sizeof(ListNode));
@@ -26,6 +32,12 @@ List *listNew(enum ListNodeType type, ListGenericFn *listGenericFn) {
     return rlt;
 }
 
+/**
+ * 根据类型提供默认的方法，如果传入的方法集合不是NULL，则使用其中的非NULL方法覆盖默认方法
+ * @param type
+ * @param list
+ * @param listGenericFn
+ */
 void loadFn(enum ListNodeType type, List *list, ListGenericFn *listGenericFn) {
     if (listGenericFn != NULL) {
         list->listGenericFn = *listGenericFn;
@@ -46,9 +58,10 @@ void loadFn(enum ListNodeType type, List *list, ListGenericFn *listGenericFn) {
                 list->listGenericFn.countElemSize = countStrSize;
             }
             break;
-        case STRUCT:
-
         default:
+            if (list->listGenericFn.elemEquals == NULL) {
+                list->listGenericFn.elemEquals = defaultEquals;
+            }
             break;
     }
 }
@@ -131,6 +144,31 @@ int listDelete(List *list, int index) {
     return 1;
 }
 
+/**
+ * 删除节点，但是不释放该节点数据，将该节点数据返回
+ * @param list
+ * @param index
+ * @return
+ */
+void *listDeleteWithNoFree(List *list, int index) {
+    if (index > listLength(list) - 1 || index < 0) {
+        printf("index 不合法");
+        return 0;
+    }
+
+    ListNode *node = list->head;
+    for (int i = 0; i < index; i++) {
+        node = node->next;
+    }
+
+    ListNode *temp = node->next->next;
+    void *rlt = node->next->value;
+    free(node->next);
+    node->next = temp;
+    (*((int *) list->head->value))--;
+    return rlt;
+}
+
 int listDeleteElem(List *list, void *elem) {
     ListNode *node = list->head;
 
@@ -156,6 +194,31 @@ void removeNextNode(const List *list, ListNode *node) {
     freeListNode(list, node->next);
     node->next = temp;
     (*((int *) list->head->value))--;
+}
+
+void *listGet(List *list, int index) {
+    if (index > listLength(list) - 1 || index < 0) {
+        printf("index 不合法");
+        return 0;
+    }
+    ListNode *node = list->head->next;
+    for (int i = 0; i < index; ++i) {
+        node = node->next;
+    }
+
+    return node->value;
+
+}
+
+int listGetIndex(List *list, void *elem) {
+    ListNode *curNode = list->head->next;
+    for (int i = 0; i < listLength(list); ++i) {
+        if ((*list->listGenericFn.elemEquals)(curNode->value, elem)) {
+            return i;
+        }
+        curNode = curNode->next;
+    }
+    return -1;
 }
 
 void listSerialize(List *list, FILE *file) {

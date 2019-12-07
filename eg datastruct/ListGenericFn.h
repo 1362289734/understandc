@@ -23,6 +23,10 @@ typedef enum BOOL (*ElemEqualsFn)(void *, void *);
 
 typedef int (*CountElemSizeFn)(void *);
 
+typedef void *(*ElemSerialFn)(void *);
+
+typedef void *(*ElemDeSerialFn)(void *);
+
 
 typedef struct ListGenericFn {
     PrintFn printElem;
@@ -34,6 +38,7 @@ typedef struct ListGenericFn {
     ElemEqualsFn elemEquals;
 
     CountElemSizeFn countElemSize;
+
 } ListGenericFn;
 
 enum BOOL strEquals(void *, void *);
@@ -44,5 +49,6 @@ void printStr(int, void *);
 
 void *createStr(void *);
 
+enum BOOL defaultEquals(void *one, void *two);
 
 #endif //DATASTRUCT_LISTGENERICFN_H

@@ -7,6 +7,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+//typedef struct OtherStudent {
+//    char *name;
+//    int age;
+//} OtherStudent;
+
 typedef struct Student {
     char name[20];
     int age;
@@ -18,14 +23,6 @@ Student *createStudent(char *name, int age) {
     memcpy(rlt->name, name, strlen(name) + 1);
     rlt->age = age;
     return rlt;
-}
-
-enum BOOL isSameStudent(Student one, Student two) {
-    return strcmp(one.name, two.name) == 0 && one.age == two.age;
-}
-
-enum BOOL isSameStudentOther(Student one, Student two) {
-    return strcmp(one.name, two.name) == 0;
 }
 
 void *createStu(void *stu) {
@@ -51,9 +48,22 @@ int countStuSize(void *one) {
     return sizeof(Student);
 }
 
+void *serialStu(void *stu) {
+    Student *student = (Student *) stu;
+
+    int nameLen = strlen(student->name) + 1;
+    char *rlt = malloc(nameLen + sizeof(int) + sizeof(int) + sizeof(int));
+    memcpy(rlt, &nameLen, sizeof(int));
+    int age = student->age;
+    int intLen = 4;
+    memcpy(rlt + sizeof(int), student->name, nameLen);
+    memcpy(rlt + sizeof(int) + nameLen, &intLen, sizeof(int));
+    memcpy(rlt + sizeof(int) * 2 + nameLen, &age, sizeof(int));
+    return rlt;
+}
+
 int main(void) {
-    ListGenericFn listGenericFn = {NULL, NULL, NULL, studentEquals, NULL};
-    List *strList = listNew(STRING, &listGenericFn);
+    List *strList = listNew(STRING, NULL);
 
     listAppend(strList, "1");
     printf("%d\n", listLength(strList));

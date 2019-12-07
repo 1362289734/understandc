@@ -28,6 +28,14 @@ typedef struct List {
  */
 List *listNew(enum ListNodeType, ListGenericFn *listGenericFn);
 
+/**
+ * 删除节点，但是不释放该节点数据，将该节点数据返回
+ * @param list
+ * @param index
+ * @return
+ */
+void *listDeleteWithNoFree(List *list, int index);
+
 int listLength(List *);
 
 void listDestroy(List *);
@@ -89,6 +97,14 @@ void *listUpdate(List *list, int index, void *elem);
  * @return index不合法返回0
  */
 void *listGet(List *list, int index);
+
+/**
+ * 查找元素所在的位置，找不到返回-1
+ * @param list
+ * @param elem
+ * @return
+ */
+int listGetIndex(List *list, void *elem);
 
 void listSerialize(List *list, FILE *file);
 

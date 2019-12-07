@@ -18,6 +18,10 @@ enum BOOL strEquals(void *one, void *two) {
     }
 }
 
+enum BOOL defaultEquals(void *one, void *two) {
+    return one == two;
+}
+
 
 void printStr(int index, void *string) {
     printf("[%d]=%s ", index, string);
