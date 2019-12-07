@@ -7,5 +7,5 @@
 # ch03
 >链表练习
 
-# eg destruct
+# eg datastruct
 >多种数据类型的List 例子
