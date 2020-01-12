@@ -1,0 +1,162 @@
+#div_layout div{
+	float: left;
+}
+#div_layout p{
+	margin: 10px 0px;
+}
+#top a:visited{
+	color:black;
+}
+#top a:hover{
+	color: red;
+}
+#top a:active{
+	color: pink;
+}
+#mainpage{
+	text-decoration: none;
+}
+#myorder{
+	text-decoration: none;
+}
+#favor{
+	text-decoration: none;
+}
+#create{
+	text-decoration: none;
+}
+#login{
+	text-decoration: none;
+}
+#p1{
+	text-align: right;
+}
+#p2{
+	text-align: center;
+}
+#brand{
+	font-size: 36px;
+	padding: 20px 0px;
+}
+#search{
+	font-size: 20px;
+	margin: 40px 0px;
+	height: 33px;
+	width: 370px;
+	border-color: white;
+	outline: medium solid red;
+	float: left;
+}
+#search_button{
+	font-size: 20px;
+	color:white;
+	margin:40px 0px;
+	padding: 0px 25px;
+	height: 33px;
+	border-color: red;
+	background-color: red;
+	outline: medium solid red;
+}
+#shopping_cart{
+	font-size: 20px;
+	color:red;
+	margin:35px 0px;
+	padding: 0px 25px;
+	height: 40px;
+	width: 100%;
+	border-color: black;
+	background-color: #D9D9F3;
+	outline: medium solid #D9D9F3;
+}
+li{
+	font-size: 18px;
+	line-height: 45px;
+}
+ul{
+	list-style-type: none;
+	padding: 0px 30px;
+}
+ul a:visited{
+	color:white;
+}
+ul a:hover{
+	color: red;
+}
+ul a:active{
+	color: pink;
+}
+#circle{
+        width:60px;
+        height:60px;
+        border:1px solid #000;
+        border-radius:50%;
+        margin:10px 10px;
+        border-color: white;
+        background-color: #CCCCCC;
+        float: left;
+        /*background-image: url('');*/
+        /*待填写图片路径👆*/
+}
+#p3{
+	color: #CCCCCC;
+	font-size: 14px;
+	height: 62px;
+}
+#div_1{
+	padding: 0px 5px;
+}
+#div_2{
+	width: 199px;
+	height: 325px;
+	text-align: left;
+	display: inline-block;
+	overflow-y: scroll;
+}
+#div_2 p{
+	margin: 0px 0px;
+	text-indent: 16%;
+	color: #CCCCCC;
+}
+#rectangle{
+        width:5px;
+        height:25px;
+        border:1px solid red;
+        border-color: red;
+        background-color: red;
+        float: left;
+       	margin:  12px 0px;
+}
+#nanzhuang{
+	text-decoration:none; 
+}
+#nanzhuang:visited{
+	color:black;
+}
+#nanzhuang:hover{
+	color: red;
+}
+#nanzhuang:active{
+	color: pink;
+}
+#p4{
+	padding: 0px 10px;
+	font-size: 22px;
+	text-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
