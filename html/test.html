@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js函数</title>
+</head>
+<body>
+	<p>哈哈啥事1</p>
+	<p>哈哈啥事2</p>
+
+	<div id="divo">
+
+	</div>	
+
+	<div class="divc"></div>
+
+
+
+	<input  type="checkbox" name="interesting" value="basketball">篮球</input>
+	<input type="checkbox" name="interesting" value="football"  checked="checked">足球</input>
+	<input type="checkbox" name="interesting" value="pingpong">平平球</input>
+
+
+	<span id="sp"></span>
+
+
+	<script type="text/javascript">
+
+		// function  show(arg,password){  //如果你们语法没问题 但是函数没起作用    一般情况下是你的函数名 跟内置的函数名重复了
+		// 	document.write(arg+"我是你爸爸爸!!!"+password);
+		// }
+		//test();
+		//window.onload=show("张三",12321);  // 在页面进行加载的时候就开始执行这个函数
+
+		// (show("zhangsan",12314))();
+
+		//匿名函数
+		
+
+		// var x=function (arg){
+		// 	document.write("我是你爸爸爸!!!");
+		// }	
+		// x("zhansgan");
+
+		// var  y=x;
+		// y("pdd");
+		// var  tagList=document.getElementsByTagName('p');
+		// tagList[0].style.color="red";
+
+		// getElementById() 根据id 获取文档对象
+		// var  divo=document.getElementById("divo");
+		// divo.style.background="url('../img/4.jpg')";
+		// divo.style.width="500px";
+		// divo.style.height="300px";
+
+
+		// var  divc=document.getElementsByClassName("divc")[0];
+		// divc.innerText="哈哈是";
+		// divc.style.color="green";
+
+
+		// // var  name=document.getElementsByName("interesting");
+
+		// var  input=document.getElementsByTagName("input");
+				
+		// for (var i = 0; i < input.length; i++) {
+		// 	if(input[i].checked!=true){
+		// 		input[i].checked=true;
+		// 	}else{
+		// 		input[i].checked=false;
+		// 	}
+		// }
+		
+		//网页版的倒计时
+
+		var    date=new   Date();//创建一个时间对象
+		date.setDate(16);
+		date.setMonth(0); //数值要比实际月份数值小1
+		date.setFullYear(2020);
+		date.setHours(7);
+		date.setMinutes(20);
+
+		//alert(date.getFullYear()+"-"+date.getMonth()+1);  //  
+
+		function  count(){
+			var  time=date.getTime()-new  Date(); //得到是毫秒值
+			time=time/1000;
+			var  sec=Math.floor(time/3600)+"时"+Math.floor(time%3600/60)+"分"+Math.floor(time%60)+"秒";
+			document.getElementById("sp").innerHTML="距离结束还剩下:"+sec;
+
+			var  timer=setTimeout('count()',1000);
+			// clearTimeout(timer);
+			// alert("清除:"+timer);
+		}
+
+		count();
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>页面布局</title>
+	<style type="text/css">
+		#div1 div{
+			float: left;
+		}
+		ul li{
+			list-style-type: none;
+		}
+		#a1{
+			text-decoration-line: none;
+			color: white;
+		}
+		#head>ul>li{
+			width: 80px;
+			height: 20px;
+			border: 1px green solid;
+			float: left;
+			text-align: center;     /*文字居中*/
+			/*letter-spacing: 10px;*/   /*文字间的距离*/
+
+			margin-left: 50px; 
+		}
+		#fruit #hiddenStle{
+			list-style-type: none;
+			width: 80px;
+			height: 100px;
+			border: 1px red solid;
+			/*background-image: url('');*/
+			background-size: 80px 100px;
+			background-color: black;
+			display: none;
+		}
+		/*#fruit ol{
+			float: left;
+			margin: 0px auto;
+		}*/
+		/*#fruit #hiddenStle>ol{
+			margin-top: 0px;
+			margin-left: 0px;
+		}*/
+		#fruit:hover #hiddenStle{
+			color: white;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1" style="width: 1200px;height: 800px">
+		<div id="head" style="width: 1200px; height: 50px;border: 1px red solid;background-color: pink">
+			<ul>
+				<!-- &nbsp; 表示空格 -->
+				<li>首&nbsp;&nbsp;&nbsp;&nbsp;页</li>
+				<li id="fruit">水&nbsp;&nbsp;&nbsp;&nbsp;果
+					<span id="hiddenStle">
+						<ol>
+							<li><a id="a1" href="">西瓜</a></li>
+							<li><a id="a1" href="">芒果</a></li>
+							<li><a id="a1" href="">哈密瓜</a></li>
+						</ol>
+					</span>
+				</li>
+				<li>蔬&nbsp;&nbsp;&nbsp;&nbsp;菜</li>
+				<li>水&nbsp;&nbsp;&nbsp;&nbsp;产</li>
+				<li>家&nbsp;&nbsp;&nbsp;&nbsp;禽</li>
+				<li>坚&nbsp;&nbsp;&nbsp;&nbsp;果</li>
+				<li>其&nbsp;&nbsp;&nbsp;&nbsp;他</li>
+				<li>客&nbsp;&nbsp;&nbsp;&nbsp;服</li>
+			</ul>
+		</div>
+			<!-- <div  	style="width: 25%;height: 60%; background-color: skyblue;">这是左边</div> -->
+			<!-- <div  	style="width: 55%;height: 60%; background-color: green;">这是中间</div> -->
+			<!-- <div 	style="width: 20%;height: 60%;background-color: yellow;">这是右边</div> -->
+			<!-- <div 	style="width: 100%;height: 20%;background-color: red;">这是下边</div> -->
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
