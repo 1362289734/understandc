@@ -8,6 +8,33 @@ public class PokerGame {
      * 每一次重新启动程序   所有的牌都会被重洗
      * 要求:在控制台打印农民和地主的所有的牌
      */
+    private static String [] str1 = new String[20];
+    private static String [] str2 = new String[17];
+    private static String [] str3 = new String[17];
+
+    public static String[] getStr1() {
+        return str1;
+    }
+
+    public static String[] getStr2() {
+        return str2;
+    }
+
+    public static String[] getStr3() {
+        return str3;
+    }
+
+    public static void setStr1(String[] str1) {
+        PokerGame.str1 = str1;
+    }
+
+    public static void setStr2(String[] str2) {
+        PokerGame.str2 = str2;
+    }
+
+    public static void setStr3(String[] str3) {
+        PokerGame.str3 = str3;
+    }
 
     public static void Begin() {
         String[] strArr = new String[54];
@@ -70,9 +97,9 @@ public class PokerGame {
                 if (j==20)j=0;
             }
         }
-        display(player1);
-        display(player2);
-        display(player3);
+        setStr1(player1);
+        setStr2(player2);
+        setStr3(player3);
     }
     public  static void display(String [] str){
         for (int i = 0; i<str.length;i++){
@@ -83,6 +110,15 @@ public class PokerGame {
 
 
     public static void main(String[] args) {
+        String [] p1 = new String[20];
+        String [] p2 = new String[17];
+        String [] p3 = new String[17];
         Begin();
+        p1 = getStr1();
+        p2 = getStr2();
+        p3 = getStr3();
+        display(p1);
+        display(p2);
+        display(p3);
     }
 }
