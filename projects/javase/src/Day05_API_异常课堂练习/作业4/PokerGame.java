@@ -24,18 +24,6 @@ public class PokerGame {
         return str3;
     }
 
-    public static void setStr1(String[] str1) {
-        PokerGame.str1 = str1;
-    }
-
-    public static void setStr2(String[] str2) {
-        PokerGame.str2 = str2;
-    }
-
-    public static void setStr3(String[] str3) {
-        PokerGame.str3 = str3;
-    }
-
     public static void Begin() {
         String[] strArr = new String[54];
         String temp;
@@ -97,9 +85,9 @@ public class PokerGame {
                 if (j==20)j=0;
             }
         }
-        setStr1(player1);
-        setStr2(player2);
-        setStr3(player3);
+        PokerGame.str1 = player1;
+        PokerGame.str2 = player2;
+        PokerGame.str3 = player3;
     }
     public  static void display(String [] str){
         for (int i = 0; i<str.length;i++){
