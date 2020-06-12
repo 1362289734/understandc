@@ -1,0 +1,7 @@
+#content
+#Fri Jun 12 18:19:00 CST 2020
+lisi1=Alex
+lisi0=abcd
+lisi=王五
+lisi3=12345
+lisi2=张三
