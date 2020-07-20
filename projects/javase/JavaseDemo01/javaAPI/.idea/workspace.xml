@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1c1afe6-f3a6-45f8-8a51-bb90df02fc23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaBasicTest/JavaBasicTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-snake/.idea/java-snake.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/ArrayCopyOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/date/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/math/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/obj/APIDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/obj/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/reg/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/reg/RegDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/str/StrDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/str/StrDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/club/banyuan/demo/str/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/log.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions/ExceptionDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions/ExceptionDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions/ExceptionDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions2/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions2/Tool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions3/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/exceptions3/FunctionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOop3/src/club/banyuan/com/homework/DemoTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaOopExtends/javaOopExtends.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/javaseOop2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/InnerClass2/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/InnerClass3/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/InnerClass3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/InnerClass3/PersonImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/InnerClass3/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/abstractCode/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/abstractCode/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/abstractCode/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/abstractCode/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/abstractCode/Work2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/TeacherInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/TestInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/Work2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode/WorkInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/MyAbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/MyAbstractClassSon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/MyInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/MyInterface2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/interfaceCode2/MyInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/BasketBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/PPBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/PingPongPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/PingPongPersonImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/PingPongTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/club/test/PingPongTeacherImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/innerClass/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/innerClass4/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/innerClass4/Person1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/innerClass4/Person2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaseOop2/src/com/banyuan/innerClass5/ClassOuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/client/SnakeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/constant/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/Drawable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/Moveable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/MyFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/MySnake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/core/SnakeObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/img/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/img/fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/img/food.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/img/snake_body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/img/snake_head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/util/GameUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake/src/com/zzk/snake/util/ImageUtil.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b1HbcYnHEsaOJc0ZdRnZ3tGXBc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/club/banyuan/demo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/club/banyuan/demo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Demo (1)">
+    <configuration name="APIDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.banyuan.demo.obj.APIDemo1" />
+      <module name="javaAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.banyuan.demo.obj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.banyuan.demo.date.Demo" />
+      <module name="javaAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.banyuan.demo.date.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.banyuan.demo.math.Demo" />
+      <module name="javaAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.banyuan.demo.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.banyuan.demo.str.StrDemo" />
+      <module name="javaAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.banyuan.demo.str.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="club.banyuan.demo.TestArray" />
+      <module name="javaAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="club.banyuan.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo (1)" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.StrDemo" />
+        <item itemvalue="Application.APIDemo1" />
+        <item itemvalue="Application.TestArray" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1c1afe6-f3a6-45f8-8a51-bb90df02fc23" name="Default Changelist" comment="" />
+      <created>1587792751615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587792751615</updated>
+      <workItem from="1587792753174" duration="9664000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

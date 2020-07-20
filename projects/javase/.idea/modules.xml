@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/SE/prev2/Json/Json.iml" filepath="$PROJECT_DIR$/src/SE/prev2/Json/Json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/SE/prev2/Resource/Resource.iml" filepath="$PROJECT_DIR$/src/SE/prev2/Resource/Resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase.iml" filepath="$PROJECT_DIR$/javase.iml" />
     </modules>
   </component>
