@@ -1,0 +1,50 @@
+#login :invalid {
+                outline: solid red;
+            }
+#login :valid {
+                outline: solid green;    
+     }
+form{
+	text-align: center;
+}
+#p1{
+	font-size: 30px;
+	font-weight: 900;
+	font-style: normal;
+}
+#p2{
+	font-size: 30px;
+	font-weight: 400;
+	font-style: italic;
+}
+#p3{
+	font-size: 30px;
+	font-weight: 700;
+	font-style: oblique;
+}
+#p4{
+	font-size: 30px;
+	font-weight: 100;
+	font-style: normal;
+}
+#div_1{
+	width: 420px;
+	height: 120px;
+	border: solid red 1px;
+	text-align: left;
+	display: inline-block;
+	float: left;
+}
+#div_1 p{
+	text-indent: 7%
+}
+#div_2{
+	width: 420px;
+	height: 120px;
+	border: solid red 1px;
+	text-align: left;
+	display: inline-block;
+}
+#div_2 p{
+	text-indent: 7%;
+}
