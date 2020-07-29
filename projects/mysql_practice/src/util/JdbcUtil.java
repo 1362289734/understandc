@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 public class JdbcUtil {
+
+    //mysql
     //数据库用户名
     private static final String USER = "root";
     //数据库密码
@@ -22,7 +24,7 @@ public class JdbcUtil {
 
     //初始化
     static {
-        try{
+        try {
             //加载驱动
             Class.forName(JDBC_DRIVER);
         } catch (ClassNotFoundException e) {
@@ -31,7 +33,7 @@ public class JdbcUtil {
     }
 
     //获取数据库连接
-    public static Connection getConnection(){
+    public static Connection getConnection() {
         try {
             //获取数据库连接
             connection = DriverManager.getConnection(DB_URL);
@@ -42,14 +44,14 @@ public class JdbcUtil {
     }
 
     //查询单条数据结果
-    public static Map<String,Object> queryOne(String sql,Object...params){
-        Map<String,Object> map  = new HashMap<String,Object>();
+    public static Map<String, Object> queryOne(String sql, Object... params) {
+        Map<String, Object> map = new HashMap<String, Object>();
         connection = getConnection();
-        try{
+        try {
             preparedStatement = connection.prepareStatement(sql);
-            if (params != null && params.length>0){
+            if (params != null && params.length > 0) {
                 for (int i = 0; i < params.length; i++) {
-                    preparedStatement.setObject(i+1,params[i]);
+                    preparedStatement.setObject(i + 1, params[i]);
                 }
             }
             resultSet = preparedStatement.executeQuery();
@@ -57,121 +59,105 @@ public class JdbcUtil {
             int collen = metaData.getColumnCount();
             while (resultSet.next()) {
                 for (int i = 0; i < collen; i++) {
-                    String colName = metaData.getColumnName(i+1);
+                    String colName = metaData.getColumnName(i + 1);
                     Object colValue = resultSet.getObject(colName);
                     if (colValue == null) {
-                        colValue ="";
+                        colValue = "";
                     }
-                    map.put(colName,colValue);
+                    map.put(colName, colValue);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             //关闭连接
-            close(connection,preparedStatement,resultSet);
+            close(connection, preparedStatement, resultSet);
         }
         return map;
     }
 
 
     //查询多条结果
-    public static List<Map<String,Object>> queryAll(String sql , Object...params){
-        List<Map<String,Object>> list = new ArrayList<Map<String, Object>>();
+    public static List<Map<String, Object>> queryAll(String sql, Object... params) {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
         connection = getConnection();
-        try{
+        try {
             preparedStatement = connection.prepareStatement(sql);
-            if (params!=null&&params.length>0){
+            if (params != null && params.length > 0) {
                 for (int i = 0; i < params.length; i++) {
-                    preparedStatement.setObject(i+1,params[i]);
+                    preparedStatement.setObject(i + 1, params[i]);
                 }
             }
             resultSet = preparedStatement.executeQuery();
             ResultSetMetaData metaData = resultSet.getMetaData();
             int collen = metaData.getColumnCount();
             while (resultSet.next()) {
-                Map<String,Object> map = new HashMap<String,Object>();
+                Map<String, Object> map = new HashMap<String, Object>();
                 for (int i = 0; i < collen; i++) {
-                    String colName = metaData.getColumnName(i+1);
+                    String colName = metaData.getColumnName(i + 1);
                     Object colValue = resultSet.getObject(colName);
                     if (colValue == null) {
                         colValue = "";
                     }
-                    map.put(colName,colValue);
+                    map.put(colName, colValue);
                 }
                 list.add(map);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             //关闭连接
-            close(connection,preparedStatement,resultSet);
+            close(connection, preparedStatement, resultSet);
         }
         return list;
     }
 
     //插入  更新  删除数据
-    public static int update (String sql ,Object...params){
+    public static int update(String sql, Object... params) {
         int result = 0;
         connection = getConnection();
         try {
             preparedStatement = connection.prepareStatement(sql);
-            if (params != null && params.length>0){
+            if (params != null && params.length > 0) {
                 for (int i = 0; i < params.length; i++) {
-                    preparedStatement.setObject(i+1,params[i]);
+                    preparedStatement.setObject(i + 1, params[i]);
                 }
             }
             result = preparedStatement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             //关闭连接
-            close(connection,preparedStatement,resultSet);
+            close(connection, preparedStatement, resultSet);
         }
         return result;
     }
 
     //关闭连接
-    public static void close (Connection conn ,PreparedStatement pstmt,ResultSet rs){
-        try{
-            if (rs != null){
+    public static void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
+        try {
+            if (rs != null) {
                 rs.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        try{
-            if (pstmt != null){
+        try {
+            if (pstmt != null) {
                 pstmt.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        try{
-            if (conn != null){
+        try {
+            if (conn != null) {
                 conn.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

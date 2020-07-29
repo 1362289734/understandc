@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class MysqlDemo {
+    //mysql
     //数据库用户名
     static final String USER = "root";//用户名默认为root
     //数据库密码
