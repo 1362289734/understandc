@@ -1,4 +1,4 @@
-package util;
+package main.java.practice.util;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class JdbcUtil {
     public static Connection getConnection() {
         try {
             //获取数据库连接
-            connection = DriverManager.getConnection(DB_URL);
+            connection = DriverManager.getConnection(DB_URL,USER,PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
         }

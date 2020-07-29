@@ -1,4 +1,4 @@
-package practice.demo;
+package main.java.practice.demo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
