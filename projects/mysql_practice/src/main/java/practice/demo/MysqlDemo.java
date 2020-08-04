@@ -13,9 +13,11 @@ public class MysqlDemo {
     static final String PASSWORD = "hqijia.123456";
 
     //JDBC 连接驱动     //MySQL 8 的固定格式
+    //com.mysql.cj.jdbc.Driver
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     //JDBC连接串 db_demo 表示数据库名称
     static final String DB_URL = "jdbc:mysql://localhost:3306/db_demo?useSSL=false";
+    //jdbc:mysql://localhost:3306/db_demo?useSSL= false
 
     public static void main(String[] args) {
         Connection connection = null;

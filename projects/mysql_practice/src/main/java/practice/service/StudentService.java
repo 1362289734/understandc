@@ -12,6 +12,7 @@ public class StudentService {
     public Student getStudentById(int sno){
         //SQL 语句
         String sql = "select sno, sname, ssex, classNo from student where sno = ?";
+        //将查询到的信息用Map<String,Object>的方法转换成键值对的形式，即JSON格式
         Map<String,Object> map = JdbcUtil.queryOne(sql,sno);
         Student student = JSONObject.parseObject(JSONObject.toJSONString(map),Student.class);
         return student;

@@ -2,7 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3345cf8b-d2d6-4996-bb61-7ce4735a689a" name="Default Changelist" comment="JAVASE">
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/libraries/Maven__com_alibaba_fastjson_1_2_70.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/MarketBillManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/entity/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/exception/FormPostException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/exception/MbmException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/exception/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/HttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/HttpServerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/MbmRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/SocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/SocketHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/server/SocketHandlerJsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/test/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/util/PropUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/java/mbm/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/bill_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/bill_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/bill_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/form_post_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/btn_bill.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/btn_exit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/btn_suppliers.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/btn_users.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/button_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/frame_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/header_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/input_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/login_box.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/login_icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/images/title.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/js/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/provider_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/provider_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/user_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/resources/pages/user_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarketBillManager/src/main/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/META-INF/Socket.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/tcp/FileTcpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/tcp/FileTcpServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/tcp/TcpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/tcp/TcpServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/udp/UdpClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Socket/udp/UdpServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/bill_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/bill_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/bill_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/form_post_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/btn_bill.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/btn_exit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/btn_suppliers.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/btn_users.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/button_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/frame_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/header_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/input_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/login_box.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/login_icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/images/title.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/js/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/provider_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/provider_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/user_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/resources/pages/user_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/entity/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/exception/FormPostException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/exception/MbmException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/exception/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/HttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/MbmRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/SocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/util/PropUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/src/mbm/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SE/HttpServer/user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaseDemo02/MarketBillManager/src/club/banyuan/mbm/server/MbmRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaseDemo02/MarketBillManager/src/club/banyuan/mbm/server/MbmRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/HttpServer/HttpServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/HttpServer/HttpServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/FileTcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/FileTcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/FileTcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/FileTcpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/tcp/TcpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/udp/UdpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/udp/UdpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE/prev2/Socket/src/udp/UdpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SE/prev2/Socket/src/udp/UdpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql_practice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql_practice/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql_practice/src/main/java/practice/demo/MysqlDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql_practice/src/main/java/practice/demo/MysqlDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql_practice/src/main/java/practice/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql_practice/src/main/java/practice/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +139,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -61,66 +174,41 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/SE/prev2/Json/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MarketBillManager" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\understandc\projects\javase\src\SE\HttpServer\resources" />
+      <recent name="D:\project\understandc\projects\javase\src\SE\HttpServer\pages" />
       <recent name="D:\project\understandc\projects\javase\src\SE\prev2\Resource\src" />
       <recent name="D:\project\understandc\projects\javase\src\SE\prev2\ex5\ex5_1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tcp" />
       <recent name="SE.prev2.ex3" />
       <recent name="SE.prev.ex5.timed" />
       <recent name="SE.prev.ex2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\understandc\projects\javase\src\SE\HttpServer" />
+      <recent name="D:\project\understandc\projects\javase\src\SE\HttpServer\resources" />
       <recent name="D:\project\understandc\projects\javase\src\SE\prev2\Json\resources" />
       <recent name="D:\project\understandc\projects\javase\src\SE\prev2\Json\src" />
       <recent name="D:\project\understandc\projects\javase\src\SE\prev2\Recource" />
-      <recent name="D:\project\understandc\projects\javase\src\杂项" />
-      <recent name="D:\project\understandc\projects\javase\src\SE\prev\ex5\timed" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VideoStoreLauncher (2)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Json" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PropUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PropUtil" />
-      <module name="Resource" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VideoStoreLauncher (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VideoStoreLauncher" />
-      <module name="Resource" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VideoStoreLauncher (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VideoStoreLauncher" />
-      <module name="Json" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VideoStoreLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SE.prev2.ex5.VideoStoreLauncher" />
-      <module name="javase" />
+  <component name="RunManager" selected="Application.HttpServer">
+    <configuration name="FileTcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.FileTcpClient" />
+      <module name="Socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SE.prev2.ex5.*" />
+          <option name="PATTERN" value="tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,13 +216,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileTcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.FileTcpServer" />
+      <module name="Socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mbm.server.HttpServer" />
+      <module name="HttpServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mbm.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.TcpClient" />
+      <module name="Socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo" />
+      <module name="HttpServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VideoStoreLauncher (2)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.VideoStoreLauncher (1)" />
-        <item itemvalue="Application.PropUtil" />
-        <item itemvalue="Application.VideoStoreLauncher" />
+        <item itemvalue="Application.HttpServer" />
+        <item itemvalue="Application.demo" />
+        <item itemvalue="Application.FileTcpClient" />
+        <item itemvalue="Application.FileTcpServer" />
+        <item itemvalue="Application.TcpClient" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +306,24 @@
       <workItem from="1595032738091" duration="23968000" />
       <workItem from="1595123605084" duration="6015000" />
       <workItem from="1595205364716" duration="11285000" />
-      <workItem from="1595295072104" duration="249000" />
+      <workItem from="1595295072104" duration="10932000" />
+      <workItem from="1595381591984" duration="8628000" />
+      <workItem from="1595467983866" duration="3606000" />
+      <workItem from="1595552980589" duration="7281000" />
+      <workItem from="1595639901778" duration="2427000" />
+      <workItem from="1595724081208" duration="1784000" />
+      <workItem from="1595734432308" duration="3032000" />
+      <workItem from="1595811695810" duration="1324000" />
+      <workItem from="1595929021280" duration="85000" />
+      <workItem from="1595929141487" duration="650000" />
+      <workItem from="1595984995881" duration="151000" />
+      <workItem from="1595992779055" duration="6000" />
+      <workItem from="1595992890787" duration="3809000" />
+      <workItem from="1596072115188" duration="10717000" />
+      <workItem from="1596116923722" duration="678000" />
+      <workItem from="1596157385128" duration="24428000" />
+      <workItem from="1596197602572" duration="9800000" />
+      <workItem from="1596271287295" duration="2806000" />
     </task>
     <task id="LOCAL-00001" summary="JAVASE">
       <created>1595211220106</created>
@@ -202,14 +353,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="JAVASE" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1595210661956">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1595315259589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595210661956" />
-    <state x="31" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594970127783">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595315259589" />
+    <state x="31" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596200072729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="31" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594970127783" />
+    <state x="31" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596200072729" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595036650151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,14 +369,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="159" y="191" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595064326991" />
-    <state x="415" y="194" width="494" height="606" key="#com.intellij.ide.util.MemberChooser" timestamp="1595082924267">
+    <state x="415" y="194" width="494" height="606" key="#com.intellij.ide.util.MemberChooser" timestamp="1596188298709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="415" y="194" width="494" height="606" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595082924267" />
+    <state x="415" y="194" width="494" height="606" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596188298709" />
     <state x="243" y="170" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1595067247091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="243" y="170" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595067247091" />
+    <state x="278" y="471" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596101250396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="278" y="471" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596101250396" />
     <state x="604" y="97" width="1285" height="820" key="CommitChangelistDialog2" timestamp="1595211636772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,58 +389,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595209097486" />
-    <state x="1079" y="345" key="FileChooserDialogImpl" timestamp="1595210520959">
+    <state x="1079" y="345" key="FileChooserDialogImpl" timestamp="1596271649071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1079" y="345" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595210520959" />
-    <state width="1877" height="191" key="GridCell.Tab.0.bottom" timestamp="1595258794599">
+    <state x="1079" y="345" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596271649071" />
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595258794599" />
-    <state width="1877" height="191" key="GridCell.Tab.0.center" timestamp="1595258794599">
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.0.center" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595258794599" />
-    <state width="1877" height="191" key="GridCell.Tab.0.left" timestamp="1595258794599">
+    <state width="1877" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.0.left" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595258794599" />
-    <state width="1877" height="191" key="GridCell.Tab.0.right" timestamp="1595258794599">
+    <state width="1877" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.0.right" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595258794599" />
-    <state width="1877" height="345" key="GridCell.Tab.1.bottom" timestamp="1595000492940">
+    <state width="1877" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.1.bottom" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595000492940" />
-    <state width="1877" height="345" key="GridCell.Tab.1.center" timestamp="1595000492940">
+    <state width="1877" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.1.center" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595000492940" />
-    <state width="1877" height="345" key="GridCell.Tab.1.left" timestamp="1595000492940">
+    <state width="1877" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.1.left" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595000492940" />
-    <state width="1877" height="345" key="GridCell.Tab.1.right" timestamp="1595000492940">
+    <state width="1877" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
+    <state width="1877" height="345" key="GridCell.Tab.1.right" timestamp="1596270913194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595000492940" />
+    <state width="1877" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596270913194" />
     <state x="694" y="230" key="RollbackChangesDialog" timestamp="1595210170283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595210170283" />
-    <state x="385" y="114" key="SettingsEditor" timestamp="1595210553292">
+    <state x="116" y="120" key="SettingsEditor" timestamp="1596116931559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="385" y="114" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595210553292" />
+    <state x="116" y="120" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596116931559" />
     <state x="566" y="164" key="VCS.ChangeListViewerDialog" timestamp="1595210036390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="566" y="164" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595210036390" />
-    <state x="1" y="319" key="com.intellij.ide.util.TipDialog" timestamp="1595295075311">
+    <state x="1" y="319" key="com.intellij.ide.util.TipDialog" timestamp="1596271287431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1" y="319" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595295075311" />
+    <state x="1" y="319" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596271287431" />
     <state x="151" y="271" width="603" height="219" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595067106715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,17 +457,48 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="288" y="310" width="581" height="228" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595210038794" />
-    <state x="334" y="129" key="new project wizard" timestamp="1595212179264">
+    <state x="334" y="129" key="new project wizard" timestamp="1596200195610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="129" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595212179264" />
+    <state x="334" y="129" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596200195610" />
     <state x="1145" y="243" key="run.anything.popup" timestamp="1595063676405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1145" y="243" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595063676405" />
-    <state x="340" y="232" width="670" height="58" key="search.everywhere.popup" timestamp="1595063516313">
+    <state x="340" y="232" width="672" height="160" key="search.everywhere.popup" timestamp="1596099367638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="340" y="232" width="670" height="58" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595063516313" />
+    <state x="340" y="232" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596099367638" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/SocketHandler.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/SocketHandler.java</url>
+          <line>274</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SE/HttpServer/src/mbm/server/SocketHandler.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="0" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="[1-9][0-9]{1.9}" />
+        <entry key="text" value="John went for a walk, and John fell down, and John hurt his knee." />
+      </map>
+    </option>
   </component>
 </project>

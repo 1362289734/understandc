@@ -34,7 +34,7 @@ public class MbmRequest {
       } else if (line.startsWith("Host:")) {
         mbmRequest.setHost(line.replace("Host: ", ""));
       }
-      line = bufferedReader.readLine();
+      line = bufferedReader.readLine(); 
     }
 
     if (mbmRequest.getContentLength() > 0) {
