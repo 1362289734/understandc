@@ -1,0 +1,89 @@
+#logout {
+    text-align: end;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#logout a button {
+    background-color: #cce5ff;
+    border: 1px deepskyblue solid;
+    box-shadow: 0 0 0 0;
+    margin-top: 9px;
+    font-weight: bold;
+    width: 50px;
+}
+
+table {
+    border: lightblue;
+    float: left;
+}
+
+.td_1 {
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.td_2 {
+    width: 350px;
+    height: 30px;
+    font-weight: bold ;
+}
+
+#div_1 {
+    text-align: end;
+}
+
+#div_2 {
+    float: left;
+    width: 48px;
+    font-weight: bold;
+}
+
+#input_1 {
+    height: 22px;
+    margin-bottom: 6px;
+    padding-top: 3px;
+}
+
+#input_2 {
+    background: 100% url("../../images/day02/butto.jpg");
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0;
+    width: 70px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    background: 100% url("../../images/day02/butto.jpg");
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0;
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.td_3{
+    width: 150px;
+    text-align: center;
+    background-color: #c5f3ff;
+    height: 25px;
+}
+.td_4{
+    width: 150px;
+    text-align: center;
+    height: 25px;
+}

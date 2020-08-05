@@ -1,0 +1,66 @@
+#form_div_center {
+    text-align: center;
+    /*border: 1px blue solid;*/
+    float: top;
+}
+
+#form_div_right{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px black solid;*/
+    text-align: right;
+}
+
+.registerSubmit{
+    text-align: center;
+}
+
+#registerSubmit {
+    background: 100% url("../../images/day02/butto.jpg");
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0;
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.agree {
+    font-size: 13px;
+}
+
+#agreeA {
+    color: dodgerblue;
+}
+
+.confirmCodeA{
+    font-size: 13px;
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+
+legend {
+    font-size: 25px;
+    color: dodgerblue;
+    margin-left: -150px;
+    font-weight: bold;
+}
+
+.circle {
+    width: 3px;
+    height: 3px;
+    border-radius:50%;
+    background-color: deepskyblue;
+    display: inline-block;
+    margin:0 0 9px 0;
+}
+
+#a1{
+    position: relative;
+    top: -120px;
+    left: 195px;
+}
+

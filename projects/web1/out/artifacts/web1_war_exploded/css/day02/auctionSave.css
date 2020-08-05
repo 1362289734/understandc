@@ -1,0 +1,76 @@
+#logout {
+    text-align: end;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#logout a button {
+    background-color: #cce5ff;
+    border: 1px deepskyblue solid;
+    box-shadow: 0 0 0 0;
+    margin-top: 9px;
+    font-weight: bold;
+    width: 50px;
+}
+
+legend {
+    font-size: 25px;
+    color: dodgerblue;
+    margin-left: -50px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    overflow-y: scroll;
+    width: 350px;
+    height: 100px;
+    /*clear: both;*/
+    /*float: left;*/
+}
+
+.input_1 {
+    width: 220px;
+    height: 30px;
+}
+
+.div_1{
+    float: left;
+    width: 105px;
+    text-align: right;
+}
+
+#showItem{
+    float: left;
+    padding: 3px 3px 3px 3px;
+    border: 1px black solid;
+}
+
+#div_description{
+    clear: both;
+    float: left;
+    width: 105px;
+    text-align: right;
+}
+
+#input_file{
+    clear: both;
+}
+.button{
+    background: 100% url("../../images/day02/buttom.jpg");
+    color: white;
+    border: 1px deepskyblue solid;
+    box-shadow: 0 0 0 0;
+    width: 100px;
+    height: 38px;
+    font-weight: bold;
+    font-size: 18px;
+}
+span{
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}

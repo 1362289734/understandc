@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bid</title>
+    <link rel="stylesheet" type="text/css" href="../../css/day02/bid.css"/>
+</head>
+<body>
+<h2 style="font-weight: bold;float: left">在线拍卖系统</h2>
+<div id="logout"><a href="auctionOnline.html">
+    <button>注销</button>
+</a></div>
+<hr>
+
+<table border="1" cellspacing="0">
+    <tr>
+        <td class="td_1">名称：</td>
+        <td class="td_2">花瓶</td>
+    </tr>
+    <tr>
+        <td class="td_1">描述：</td>
+        <td class="td_2">古董</td>
+    </tr>
+    <tr>
+        <td class="td_1">开始时间：</td>
+        <td class="td_2">2010-01-01 16:30:00</td>
+    </tr>
+    <tr>
+        <td class="td_1">结束时间：</td>
+        <td class="td_2">2010-02-02 16:30:00</td>
+    </tr>
+    <tr>
+        <td class="td_1">起拍价</td>
+        <td class="td_2">2,000</td>
+    </tr>
+</table>
+<div id="div_1"><img src="../../images/day02/ad20.jpg"></div>
+<br style="clear: both">
+<div style="border: 1px lightblue solid">
+    <form method="post" action="">
+        <p style="margin: 0;padding: 0"><div id="div_2">出价：</div>
+        <input id="input_1" type="number" value="4000" name="price">
+        <input id="input_2" type="submit" value="竞拍"><br>
+        <span style="color: red;font-weight: bold">不能低于最高竞拍价</span>
+        </p>
+    </form>
+</div>
+<div style="margin-top: 10px">
+<a href="bid.html"><button class="button_1">刷新</button></a>
+<a href="auctionOnline.html"><button class="button_1">返回列表</button></a>
+</div>
+<div>
+    <p style="font-weight: bold">出价记录</p>
+    <table border="1" cellspacing="0">
+        <tr style="font-weight: bold">
+            <th class="td_3">竞拍时间</th>
+            <th class="td_3">竞拍价格</th>
+            <th class="td_3">竞拍人</th>
+        </tr>
+        <tr>
+            <td class="td_4">2010-01-05 12:50:01</td>
+            <td class="td_4">50000.00</td>
+            <td class="td_4">张三</td>
+        </tr>
+        <tr>
+            <td class="td_3">2010-01-05 11:50:01</td>
+            <td class="td_3">40000.00</td>
+            <td class="td_3">李四</td>
+        </tr>
+        <tr>
+            <td class="td_4">2010-01-05 10:50:01</td>
+            <td class="td_4">30000.00</td>
+            <td class="td_4">王五</td>
+        </tr>
+        <tr>
+            <td class="td_3">2010-01-05 09:50:01</td>
+            <td class="td_3">20000.00</td>
+            <td class="td_3">李靖</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+#auctionOnline{
+    overflow-x: scroll;
+}
+#logout {
+    text-align: end;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#logout a button {
+    background-color: #cce5ff;
+    border: 1px deepskyblue solid;
+    box-shadow: 0 0 0 0;
+    margin-top: 9px;
+    font-weight: bold;
+    width: 50px;
+}
+
+#search {
+    background: 100% url("../../images/day02/butto.jpg");
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 0;
+    width: 75px;
+    height: 27px;
+    font-weight: bold;
+    font-size: 18px;
+    /*margin-left: 8px;*/
+}
+
+form {
+    position: relative;
+    top: -3px;
+    left: -40px;
+    min-width: 1200px;
+}
+
+form ul {
+    list-style: none;
+}
+
+form ul li {
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+ul input {
+    width: 150px;
+}
+
+table{
+    border: 1px deepskyblue solid;
+    text-align: center;
+    clear: both;
+}
+.tr_1 {
+    background-color: #c5f3ff;
+    border: 1px deepskyblue solid;
+}
+.tr_2{
+    border: 1px lightblue solid;
+}
+tr td,th{
+    min-width: 200px;
+    height:30px;
+}
+
+#pages {
+    margin-left: 30%;
+    width: available;
+    text-align: center;
+}
+
+#pages ul{
+    list-style: none;
+}
+
+#pages ul li{
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+#pages a{
+    text-decoration: none;
+}
+
+#pages a:active{
+    color: red;
+}
+#pages a:visited{
+    color: black;
+}
+
+#pages a:hover{
+    color: purple;
+}
+
+.bidA{
+    color: red;
+}
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>auctionOnline</title>
+    <link rel="stylesheet" type="text/css" href="../../css/day02/auctionOnline.css"/>
+</head>
+<body>
+<div>
+    <h2 style="font-weight: bold;float: left">在线拍卖系统</h2>
+    <div id="logout"><a href="auctionOnline.html">
+        <button>注销</button>
+    </a></div>
+    <hr>
+    <div id="auctionOnline">
+        <form method="post" action="server/user/search">
+            <ul>
+                <li>名称<input type="text" name="item"></li>
+                <li> 描述<input type="text" name="description"></li>
+                <li> 开始时间<input type="time" name="startTime"></li>
+                <li> 结束时间<input type="time" name="endTime"></li>
+                <li> 起拍价<input type="number" name="price"></li>
+                <li><input id="search" type="submit" value="查询"></li>
+            </ul>
+        </form>
+        <!--tr_1添加颜色-->
+        <table border="1" cellspacing="0">
+            <tr class="tr_1">
+                <th>名称</th>
+                <th>描述</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>起拍价</th>
+                <th>操作</th>
+            </tr>
+            <tr class="tr_2">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_1">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_2">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_1">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_2">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_1">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_2">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a  class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_1">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_2">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+            <tr class="tr_1">
+                <td>国书</td>
+                <td>明国藏书</td>
+                <td>2010-01-20 12:30:30</td>
+                <td>2010-09-08 12:30:30</td>
+                <td>2,000</td>
+                <td><a class="bidA" href="auctionSave.html">竞拍</a></td>
+            </tr>
+        </table>
+        <div id="pages">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">上一页</a></li>
+                <li><a style="color: red" href="" name="pagesNow" id="former5">前5页</a></li>
+                <li><a href="" name="pagesNow1">1</a></li>
+                <li><a href="" name="pagesNow2">2</a></li>
+                <li><a href="" name="pagesNow3">3</a></li>
+                <li><a href="" name="pagesNow4">4</a></li>
+                <li><a href="" name="pagesNow5">5</a></li>
+                <li><a href="">下一页</a></li>
+                <li><a href="">尾页</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>auctionSave</title>
+    <link rel="stylesheet" type="text/css" href="../../css/day02/auctionSave.css"/>
+</head>
+<body>
+<div>
+    <h2 style="font-weight: bold;float: left">在线拍卖系统</h2>
+    <div id="logout"><a href="auctionOnline.html">
+        <button>注销</button>
+    </a></div>
+    <hr>
+    <div style="margin-left: 10%">
+        <form method="post" action="auctionOnline.html">
+            <legend>拍卖品信息</legend>
+            <p>
+            <div class="div_1">名称：</div><input type="text" class="input_1" name="item"/>
+            </p>
+            <p>
+            <div class="div_1">起拍价：</div>
+            <input type="number" class="input_1" name="price">
+            <span>必须为数字</span>
+            </p>
+            <p>
+            <div class="div_1">底价：</div>
+            <input type="number" class="input_1" name="lowestPrice">
+            <span>必须为数字</span></p>
+            <p>
+            <div class="div_1">开始时间：</div>
+            <input type="time" class="input_1" name="startTime">
+            <span>格式：2010-05-05 12：30：00</span></p>
+            <p>
+            <div class="div_1">结束时间：</div>
+            <input type="time" class="input_1" name="endTime">
+            <span>格式：2010-05-05 12：30：00</span></p>
+            <p>
+            <div class="div_1">拍卖品图片：</div>
+            <div id="showItem"><img style="width: 100px;height: 100px" src="../../images/day02/ad20.jpg"></div>
+            <input id="input_file" style="border: 1px grey solid" type="file"></p>
+            <br><br><br><br>
+            <p>
+            <div id="div_description">描述:</div>
+            <textarea name="descriptionAuction"></textarea></p>
+            <p style="padding-left: 80px;">
+                <input class="button" type="submit" value="保存">
+                <input class="button" type="reset" value="取消">
+            </p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
