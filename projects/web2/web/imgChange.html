@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imgChange</title>
+    <style>
+        .circle {
+            width: 8px;
+            height: 8px;
+            background-color: grey;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            top: 280px;
+            left: 150px;
+            z-index: 3;
+        }
+
+        #imgChange {
+            width:443px;
+            height:314px;
+            position: relative;
+            top: -18px;
+            left: 0;
+        }
+        #div_1{
+            border: 1px black solid;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 443px;height: 314px" id="div_1">
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+    <img id="imgChange">
+</div>
+<script>
+    var el = window.document.body;
+    var arr = new Array();
+    var key = 0;
+    var time1;
+    for (i=0;i<3;i++){
+        arr[i] = "images/circle"+(i+1)+".jpg";
+    }
+    imgChange();
+
+    //获得鼠标指向的标签的id值
+    window.document.body.onmouseover = function (event) {
+        el = event.target;
+        document.getElementById(el.id).onmouseenter = function () {
+            mouseEnter(el.id)
+        };
+        document.getElementById(el.id).onmouseleave = function () {
+            mouseLeave(el.id)
+        };
+    };
+
+    //图片的切换
+    function imgChange(){
+        clearTimeout(time1)
+        document.getElementById("imgChange").setAttribute("src",arr[key]);
+        if (key!==arr.length-1){
+            key++;
+        }else{
+            key=0;
+        }
+        time1 = setTimeout(imgChange,4000);
+    }
+
+    //鼠标移进圆点和图片的属性变化以及保持图片不动
+    function mouseEnter(id) {
+        if (id==="imgChange"){
+            clearTimeout(time1);
+        } else if (id.startsWith("circle")) {
+            document.getElementById(id).style.backgroundColor = "red";
+            document.getElementById("imgChange").setAttribute("src","images/"+id+".jpg");
+            clearTimeout(time1);
+        }
+    }
+
+    //鼠标从圆点和图片移开后的属性变化
+    function mouseLeave(id) {
+        if (id==="imgChange"){
+            // console.log(path1)后 发现获得的src发生了改变，添加了服务器名，用replace去除
+            var path1 = document.getElementById(id).src.replace("http://localhost:8080/web2_war_exploded/","");
+            // console.log(path1);
+            for (i=0;i<arr.length;i++){
+                if (path1===arr[i]){
+                    key = i;
+                }
+            }
+            // console.log(key);
+            // console.log(arr.length);
+            imgChange();
+        } else if (id.startsWith("circle")) {
+            //TODO 移出圆点后改回原来的颜色，并保持当前img 的src值
+            document.getElementById(id).style.backgroundColor = "grey";
+            document.getElementById("imgChange").setAttribute("src","images/"+id+".jpg");
+            //TODO 设置时间延迟或者改变key的值
+            var path = "images/"+id+".jpg";
+            for (i=0;i<arr.length;i++){
+                if (path===arr[i]){
+                    key = i;
+                }
+            }
+            imgChange();
+        }
+    }
+
+    //TODO 把以上方法整合起来，变得适用于不同的图片切换div中
+</script>
+</body>
+</html>

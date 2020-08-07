@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timeChange</title>
+    <style>
+        .div_1 {
+            float: left;
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .div_2 {
+            float: left;
+            color: black;
+            font-weight: 900;
+            font-size: 26px;
+            width: 45px;
+            height: 38px;
+            margin-left: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<span style="color: black;font-size: 18px;font-weight: 700;margin-left: 23px">2021.2月16号</span>
+<span style="color: black;font-size: 18px">倒计时</span><br>
+<div class="div_2">
+    <span id="month"></span>
+</div>
+<div class="div_1">月</div>
+<div class="div_2">
+    <span id="day"></span>
+</div>
+<div class="div_1">天</div>
+<div class="div_2">
+    <span id="hour"></span>
+</div>
+<div class="div_1">时</div>
+<div class="div_2">
+    <span id="minute"></span>
+</div>
+<div class="div_1">分</div>
+<div class="div_2">
+    <span id="second"></span>
+</div>
+<div class="div_1">秒</div>
+<script>
+    var date = new Date();//创建一个时间对象
+    date.setDate(16);
+    date.setMonth(1); //数值要比实际月份数值小1
+    date.setFullYear(2021);
+    date.setHours(0);
+    date.setMinutes(0);
+
+    function _lasttime() {
+        var time = date.getTime() - new Date(); //得到是毫秒值
+        time = time / 1000;
+        var _month = Math.floor(time / 3600 / 24 / 30);
+        var _day = Math.floor((time / 3600 / 24) % 30);
+        var _hour = Math.floor((time / 3600) % 24);
+        var _minute = Math.floor((time / 60) % 60);
+        var _second = Math.floor(time % 60);
+        if (_month < 10) {
+            document.getElementById("month").innerHTML = "0" + _month;
+        } else {
+            document.getElementById("month").innerHTML = _month;
+        }
+        if (_day < 10) {
+            document.getElementById("day").innerHTML = "0" + _day;
+        } else {
+            document.getElementById("day").innerHTML = _day;
+        }
+        if (_hour < 10) {
+            document.getElementById("hour").innerHTML = "0" + _hour;
+        } else {
+            document.getElementById("hour").innerHTML = _hour;
+        }
+        if (_minute < 10) {
+            document.getElementById("minute").innerHTML = "0" + _minute;
+        } else {
+            document.getElementById("minute").innerHTML = _minute;
+        }
+        if (_second < 10) {
+            document.getElementById("second").innerHTML = "0" + _second;
+        } else {
+            document.getElementById("second").innerHTML = _second;
+        }
+        var timer = setTimeout('_lasttime()', 1000);
+    }
+
+    _lasttime();
+</script>
+</body>
+</html>
